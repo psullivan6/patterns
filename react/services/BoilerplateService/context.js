@@ -24,7 +24,7 @@ export const BoilerplateProvider = props => {
   const [boilerplate, setBoilerplate] = useState(initialData);
 
   useEffect(() => {
-    let mounted = false;
+    let mounted = true;
 
     getBoilerplate().then(boilerplateData => {
       if (!mounted) {
